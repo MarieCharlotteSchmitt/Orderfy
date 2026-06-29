@@ -59,11 +59,28 @@
         <a href="#ordering" class="link-arrow">See how it works ›</a>
       </div>
 
-      <!-- Phone mockup on warm studio stage, echoing the brand film -->
+      <!-- Animated product stage — replays the brand film: logo, then a phone
+           that flips from its back to reveal the live-order app, settling in
+           the warm studio and floating gently. -->
       <div class="stage">
-        <div class="phone" role="img" aria-label="The Orderfy app showing a live driver on a map with an active order card">
-          <div class="phone-notch"></div>
-          <div class="phone-screen">
+        <div class="intro-logo" aria-hidden="true">
+          <svg width="46" height="46" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+            <circle cx="12" cy="12" r="4.2" fill="currentColor"/>
+          </svg>
+          <span>Orderfy</span>
+        </div>
+        <div class="stage-shadow" aria-hidden="true"></div>
+        <div class="phone-floater">
+          <div class="phone-flip">
+            <div class="phone-back" aria-hidden="true">
+              <span class="cam">
+                <span></span><span></span><span></span>
+              </span>
+            </div>
+            <div class="phone phone-front" role="img" aria-label="The Orderfy app showing a live driver on a map with an active order card">
+              <div class="phone-notch"></div>
+              <div class="phone-screen">
             <div class="app-topbar">
               <span class="app-back">‹</span>
               <span class="app-brand">
@@ -92,6 +109,8 @@
             </div>
             <div class="app-tabbar">
               <span class="is-active"></span><span></span><span></span><span></span><span></span>
+            </div>
+              </div>
             </div>
           </div>
         </div>
