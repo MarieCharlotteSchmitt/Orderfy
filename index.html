@@ -3,223 +3,350 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nightwell — Indie Games, Forged by Hand</title>
-  <meta name="description" content="Nightwell is an independent game studio crafting atmospheric, story-driven worlds. Explore our games." />
+  <title>Orderfy — The all-in-one restaurant platform</title>
+  <meta name="description" content="Orderfy is the all-in-one platform to run your restaurant — online ordering, POS, payments, kitchen display, and delivery, in one place. Set up in a day." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Sora:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-  <!-- ===== Header ===== -->
-  <header class="site-header" id="header">
-    <div class="header-inner">
-      <a href="#top" class="logo" aria-label="Nightwell home">
-        <span class="logo-mark"></span>
-        Nightwell
+<body id="top">
+  <!-- ===== Global navigation ===== -->
+  <header class="globalnav" id="globalnav">
+    <div class="globalnav-inner">
+      <a href="#top" class="brand" aria-label="Orderfy home">
+        <svg class="brand-mark" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+          <circle cx="12" cy="12" r="4.2" fill="currentColor"/>
+        </svg>
+        <span class="brand-word">Orderfy</span>
       </a>
-      <nav class="nav" aria-label="Primary">
-        <a href="#games" class="nav-link">Games</a>
-        <a href="#studio" class="nav-link">Studio</a>
-        <a href="#journal" class="nav-link">Journal</a>
-        <a href="#join" class="nav-link">Wishlist</a>
+      <nav class="globalnav-links" aria-label="Primary">
+        <a href="#ordering">Ordering</a>
+        <a href="#operations">Operations</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#highlights">Features</a>
+        <a href="#pricing">Pricing</a>
       </nav>
-      <div class="header-actions">
-        <button class="lang-btn" type="button">
-          <span class="flag">🌐</span> EN
-        </button>
-        <a href="#join" class="btn btn-light">Wishlist now</a>
-      </div>
+      <a href="#pricing" class="btn-buy">Get started</a>
     </div>
   </header>
 
-  <main id="top">
+  <!-- ===== Sticky product sub-nav ===== -->
+  <nav class="subnav" id="subnav" aria-label="Page sections">
+    <div class="subnav-inner">
+      <span class="subnav-title">Orderfy Platform</span>
+      <div class="subnav-links">
+        <a href="#top" class="is-active">Overview</a>
+        <a href="#ordering">Ordering</a>
+        <a href="#operations">Operations</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <a href="#pricing" class="btn-buy btn-buy-sm">Get started</a>
+    </div>
+  </nav>
+
+  <main>
     <!-- ===== Hero ===== -->
-    <section class="hero" id="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="hero-eyebrow">Independent game studio · Est. 2019</p>
-        <h1 class="hero-title">Worlds<br />worth losing<br />yourself in</h1>
-        <p class="hero-sub">We are a small team building atmospheric, hand-crafted games where every shadow tells a story. No microtransactions. No noise. Just worlds.</p>
-        <div class="hero-cta">
-          <a href="#games" class="btn btn-dark">Explore our games</a>
-          <a href="#join" class="btn btn-ghost">Join the wishlist</a>
-        </div>
+    <section class="hero">
+      <p class="hero-eyebrow">Orderfy</p>
+      <h1 class="hero-title">The whole restaurant.<br />One platform.</h1>
+      <p class="hero-sub">Online ordering, POS, payments, kitchen, and delivery — finally working as one.</p>
+      <p class="hero-price">From $0 a month. Set up in a day.<sup>1</sup></p>
+      <div class="hero-actions">
+        <a href="#pricing" class="btn-pill-dark">Get started</a>
+        <a href="#ordering" class="link-arrow">See how it works ›</a>
       </div>
-      <div class="hero-scroll">Scroll to enter ↓</div>
-    </section>
 
-    <!-- ===== Stats / social proof ===== -->
-    <section class="section section-white">
-      <div class="container center">
-        <h2 class="display">Played by 1.2&nbsp;million dreamers</h2>
-        <p class="section-sub">Our games have been carried home by players in over 90 countries — and championed by the people who love this craft as much as we do.</p>
-        <div class="logo-grid">
-          <div class="logo-card">IGF Finalist</div>
-          <div class="logo-card">Best Narrative '24</div>
-          <div class="logo-card">Editors' Choice</div>
-          <div class="logo-card">Player's Gold</div>
-          <div class="logo-card">Indie Spotlight</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Featured game (full bleed) ===== -->
-    <section class="feature" id="games">
-      <div class="feature-overlay"></div>
-      <div class="container feature-content">
-        <p class="feature-eyebrow">Now in development</p>
-        <h2 class="feature-title">Hollow Tide</h2>
-        <p class="feature-desc">A lantern-lit journey across a drowned kingdom. Solve the silence of a sunken city, one tide at a time. Coming 2026.</p>
-        <a href="#join" class="btn btn-light">Add to wishlist</a>
-      </div>
-    </section>
-
-    <!-- ===== Game catalogue ===== -->
-    <section class="section section-white" id="catalogue">
-      <div class="container center">
-        <h2 class="display">The collection</h2>
-        <p class="section-sub">Three worlds, built by hand. Each one a complete, self-contained experience with no strings attached.</p>
-      </div>
-      <div class="container games-grid">
-        <article class="game-card">
-          <div class="game-art game-art-1"></div>
-          <div class="game-body">
-            <span class="game-tag">Atmospheric · Exploration</span>
-            <h3 class="game-name">Hollow Tide</h3>
-            <p class="game-text">Navigate a flooded kingdom by lantern light, raising forgotten machines from the deep.</p>
-            <span class="game-meta">2026 · PC, Console</span>
+      <!-- Phone mockup on warm studio stage, echoing the brand film -->
+      <div class="stage">
+        <div class="phone" role="img" aria-label="The Orderfy app showing a live driver on a map with an active order card">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="app-topbar">
+              <span class="app-back">‹</span>
+              <span class="app-brand">
+                <svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="2.6"/>
+                  <circle cx="12" cy="12" r="4.4" fill="currentColor"/>
+                </svg>
+                Orderfy
+              </span>
+              <span class="app-info">ⓘ</span>
+            </div>
+            <div class="app-map">
+              <span class="map-road map-road-1"></span>
+              <span class="map-road map-road-2"></span>
+              <span class="map-river"></span>
+              <span class="map-pin"></span>
+              <span class="map-driver"></span>
+            </div>
+            <div class="app-card">
+              <p class="app-card-title">Order #1847 · On the way</p>
+              <div class="app-progress"><span></span></div>
+              <p class="app-card-line">Maya is 4 minutes away</p>
+              <p class="app-card-line app-card-muted">2× Margherita · 1× Tiramisu</p>
+              <button class="app-btn-ghost" type="button">Message driver</button>
+              <button class="app-btn-primary" type="button">Track order</button>
+            </div>
+            <div class="app-tabbar">
+              <span class="is-active"></span><span></span><span></span><span></span><span></span>
+            </div>
           </div>
-        </article>
-        <article class="game-card">
-          <div class="game-art game-art-2"></div>
-          <div class="game-body">
-            <span class="game-tag">Narrative · Mystery</span>
-            <h3 class="game-name">Ashfall</h3>
-            <p class="game-text">A snowbound detective story where every conversation reshapes the village's fate.</p>
-            <span class="game-meta">Out now · PC, Switch</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Intro statement (white band) ===== -->
+    <section class="band band-white">
+      <div class="container">
+        <h2 class="band-statement">
+          Front of house and back of house,
+          <span class="muted">finally on the same page.</span>
+        </h2>
+        <p class="band-lead">
+          Stop stitching together a tablet for delivery, a terminal for cards, a printer for
+          tickets, and a spreadsheet for everything else. Orderfy runs every order — dine-in,
+          pickup, and delivery — through one system your whole team already knows how to use.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Ordering: 2-column split (fog band) ===== -->
+    <section class="band band-fog" id="ordering">
+      <div class="container split">
+        <div class="split-text">
+          <p class="kicker">Ordering</p>
+          <h2 class="heading">Take orders<br />from anywhere.</h2>
+          <p class="copy">
+            A branded online store, QR codes on every table, and tap-to-pay at the counter —
+            all pulling from one live menu. Update a price or 86 a dish once, and it changes
+            everywhere in seconds.
+          </p>
+          <a href="#pricing" class="link-inline">Launch your store ›</a>
+        </div>
+        <div class="split-visual">
+          <div class="mini-card">
+            <div class="menu-row"><span class="menu-name">Margherita</span><span class="menu-price">$14</span></div>
+            <div class="menu-row"><span class="menu-name">Bucatini Cacio</span><span class="menu-price">$18</span></div>
+            <div class="menu-row menu-86"><span class="menu-name">Burrata <em>· 86'd</em></span><span class="menu-price">$12</span></div>
+            <div class="menu-row"><span class="menu-name">Tiramisu</span><span class="menu-price">$9</span></div>
+            <div class="menu-foot">
+              <span class="chip">Dine-in</span>
+              <span class="chip">Pickup</span>
+              <span class="chip">Delivery</span>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Teal gradient showcase (full bleed) ===== -->
+    <section class="showcase" id="delivery">
+      <div class="showcase-inner">
+        <p class="showcase-kicker">Delivery &amp; dispatch</p>
+        <h2 class="showcase-title">Orders that route themselves.</h2>
+        <p class="showcase-sub">
+          Every order lands on the right screen at the right time — the kitchen sees the ticket,
+          the driver gets the route, and the guest watches it arrive on a live map. No phone tag,
+          no lost slips.
+        </p>
+        <a href="#pricing" class="btn-pill-dark">Get started</a>
+      </div>
+    </section>
+
+    <!-- ===== Operations: 2x2 feature grid (white band) ===== -->
+    <section class="band band-white" id="operations">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="heading">Built to run the rush.</h2>
+          <p class="copy copy-wide">
+            The tools your floor, kitchen, and back office need — designed to work together
+            so nothing falls through the cracks on a Friday night.
+          </p>
+        </header>
+        <div class="grid-2x2">
+          <article class="feature-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="13" rx="2"/><line x1="3.5" y1="20.5" x2="20.5" y2="20.5"/></svg>
+            </div>
+            <h3 class="card-title">Point of sale</h3>
+            <p class="card-copy">A fast, offline-ready POS for counter and tableside. Split checks, apply comps, and accept any card or wallet — settled next day.</p>
+          </article>
+          <article class="feature-card feature-card-dark">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3.5" width="16" height="17" rx="2"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="13" y2="16"/></svg>
+            </div>
+            <h3 class="card-title">Kitchen display</h3>
+            <p class="card-copy">Tickets flow straight to the line — color-coded by station, timed to the second, and bumped with a tap. Auto-86 a dish the moment it sells out.</p>
+          </article>
+          <article class="feature-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg>
+            </div>
+            <h3 class="card-title">Guests &amp; loyalty</h3>
+            <p class="card-copy">Every order builds a guest profile. Run points, gift cards, and win-back offers that bring people back — no third-party app required.</p>
+          </article>
+          <article class="feature-card">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9l8-5 8 5v10"/><path d="M9 19v-6h6v6"/></svg>
+            </div>
+            <h3 class="card-title">Live reporting</h3>
+            <p class="card-copy">Sales, labor, voids, and best-sellers in real time — on your phone before you've cashed out. Know your numbers without waiting for Monday.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Highlights carousel (fog band) ===== -->
+    <section class="band band-fog" id="highlights">
+      <div class="container">
+        <h2 class="heading section-head-tight">Everything in the box.</h2>
+      </div>
+      <div class="carousel" role="list">
+        <article class="slide" role="listitem">
+          <p class="slide-eyebrow">Tableside</p>
+          <h3 class="slide-title">Scan, order, pay — no app.</h3>
+          <p class="slide-copy">Guests open the menu from a QR code and check out in seconds. Tables turn faster and tips run higher.</p>
         </article>
-        <article class="game-card">
-          <div class="game-art game-art-3"></div>
-          <div class="game-body">
-            <span class="game-tag">Puzzle · Surreal</span>
-            <h3 class="game-name">Paper Sky</h3>
-            <p class="game-text">Fold an origami world to find your way home through impossible architecture.</p>
-            <span class="game-meta">Out now · PC, Mobile</span>
-          </div>
+        <article class="slide" role="listitem">
+          <p class="slide-eyebrow">One inbox</p>
+          <h3 class="slide-title">Calls, texts, and web in one thread.</h3>
+          <p class="slide-copy">Every guest message and order request lands in a single inbox your team can answer together.</p>
+        </article>
+        <article class="slide" role="listitem">
+          <p class="slide-eyebrow">Menus</p>
+          <h3 class="slide-title">86 a dish once. It's gone everywhere.</h3>
+          <p class="slide-copy">Sold out of the special? Mark it once and it updates online, tableside, and on delivery — instantly.</p>
+        </article>
+        <article class="slide" role="listitem">
+          <p class="slide-eyebrow">Payments</p>
+          <h3 class="slide-title">Tap, chip, wallet, or online.</h3>
+          <p class="slide-copy">One flat rate across every channel, with deposits the next business day and no surprise fees.</p>
         </article>
       </div>
-    </section>
-
-    <!-- ===== Studio (full bleed) ===== -->
-    <section class="feature feature-studio" id="studio">
-      <div class="feature-overlay"></div>
-      <div class="container feature-content">
-        <p class="feature-eyebrow">The studio</p>
-        <h2 class="feature-title">Eleven people.<br />One workshop.</h2>
-        <p class="feature-desc">No publishers steering the wheel. We answer to the work, the players, and the worlds we promise to finish. That independence is the whole point.</p>
-        <a href="#journal" class="btn btn-ghost">Read the journal</a>
+      <div class="dots" aria-hidden="true">
+        <span class="dot is-active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
       </div>
     </section>
 
-    <!-- ===== Values / pillars ===== -->
-    <section class="section section-white">
-      <div class="container center">
-        <h2 class="display">How we build</h2>
-      </div>
-      <div class="container pillars">
-        <div class="pillar">
-          <span class="pillar-num">01</span>
-          <h3 class="pillar-title">Craft over scale</h3>
-          <p class="pillar-text">We'd rather make one unforgettable hour than a hundred forgettable ones. Every frame is intentional.</p>
-        </div>
-        <div class="pillar">
-          <span class="pillar-num">02</span>
-          <h3 class="pillar-title">Buy once, own forever</h3>
-          <p class="pillar-text">No season passes, no loot boxes, no nagging. You pay for the game, and the game is yours.</p>
-        </div>
-        <div class="pillar">
-          <span class="pillar-num">03</span>
-          <h3 class="pillar-title">Built in the open</h3>
-          <p class="pillar-text">We share the messy middle — devlogs, prototypes, dead ends — because the making is half the story.</p>
+    <!-- ===== Numbers band (white) ===== -->
+    <section class="band band-white">
+      <div class="container">
+        <h2 class="heading section-head-tight">Loved by the people in the weeds.</h2>
+        <div class="stats">
+          <div class="stat"><span class="stat-num">12,000+</span><span class="stat-label">restaurants run on Orderfy</span></div>
+          <div class="stat"><span class="stat-num">38%</span><span class="stat-label">faster table turns on average<sup>2</sup></span></div>
+          <div class="stat"><span class="stat-num">99.99%</span><span class="stat-label">uptime, even offline at the POS</span></div>
+          <div class="stat"><span class="stat-num">&lt; 1 day</span><span class="stat-label">to import your menu and go live</span></div>
         </div>
       </div>
     </section>
 
-    <!-- ===== Journal ===== -->
-    <section class="section section-tint" id="journal">
-      <div class="container center">
-        <h2 class="display">From the journal</h2>
-        <p class="section-sub">Notes from the workshop floor.</p>
-      </div>
-      <div class="container journal-grid">
-        <a href="#" class="journal-card">
-          <span class="journal-date">June 2026</span>
-          <h3 class="journal-title">Lighting an underwater city</h3>
-          <p class="journal-text">How we faked caustics on a budget and learned to love volumetric fog.</p>
-        </a>
-        <a href="#" class="journal-card">
-          <span class="journal-date">May 2026</span>
-          <h3 class="journal-title">Writing silence into dialogue</h3>
-          <p class="journal-text">The pauses say more than the lines. Our approach to quiet storytelling.</p>
-        </a>
-        <a href="#" class="journal-card">
-          <span class="journal-date">April 2026</span>
-          <h3 class="journal-title">Shipping Ashfall, six months on</h3>
-          <p class="journal-text">What we got right, what we'd redo, and the numbers behind a small launch.</p>
-        </a>
+    <!-- ===== Pricing (fog band) ===== -->
+    <section class="band band-fog" id="pricing">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="heading">Pick a plan. Switch any time.</h2>
+          <p class="copy copy-wide">No long contracts and no setup fees. Start free, add hardware and channels as you grow.</p>
+        </header>
+        <div class="plans">
+          <article class="plan">
+            <h3 class="plan-name">Starter</h3>
+            <p class="plan-price">$0<span>/mo</span></p>
+            <p class="plan-note">For a single counter or food truck.</p>
+            <ul class="plan-list">
+              <li>Online ordering &amp; QR menus</li>
+              <li>POS for one register</li>
+              <li>Next-day payouts</li>
+              <li>Basic reporting</li>
+            </ul>
+            <a href="#" class="plan-cta link-inline">Start free ›</a>
+          </article>
+          <article class="plan plan-featured">
+            <span class="plan-badge">Most popular</span>
+            <h3 class="plan-name">Pro</h3>
+            <p class="plan-price">$99<span>/mo</span></p>
+            <p class="plan-note">For a full-service restaurant.</p>
+            <ul class="plan-list">
+              <li>Everything in Starter</li>
+              <li>Kitchen display &amp; tableside</li>
+              <li>Delivery dispatch &amp; live tracking</li>
+              <li>Loyalty, gift cards &amp; unified inbox</li>
+            </ul>
+            <a href="#" class="btn-buy plan-cta-buy">Get started</a>
+          </article>
+          <article class="plan">
+            <h3 class="plan-name">Group</h3>
+            <p class="plan-price">Custom</p>
+            <p class="plan-note">For multi-location brands.</p>
+            <ul class="plan-list">
+              <li>Everything in Pro</li>
+              <li>Central menu &amp; price control</li>
+              <li>Cross-location reporting</li>
+              <li>Dedicated onboarding &amp; API</li>
+            </ul>
+            <a href="#" class="plan-cta link-inline">Talk to sales ›</a>
+          </article>
+        </div>
       </div>
     </section>
 
-    <!-- ===== Wishlist CTA (full bleed dark) ===== -->
-    <section class="cta-band" id="join">
+    <!-- ===== Closing CTA (dark stage) ===== -->
+    <section class="cta">
       <div class="container center">
-        <h2 class="cta-title">Be there when the tide turns</h2>
-        <p class="cta-sub">Wishlist Hollow Tide and we'll send a single email when it's playable — and not a word more.</p>
-        <form class="cta-form" onsubmit="return false;">
-          <input type="email" class="cta-input" placeholder="you@email.com" aria-label="Email address" required />
-          <button type="submit" class="btn btn-light">Wishlist now</button>
-        </form>
-        <p class="cta-fine">No spam. One launch email. Unsubscribe any time.</p>
+        <h2 class="cta-title">Ready to take orders?</h2>
+        <p class="cta-sub">Import your menu, print your QR codes, and serve your first table today.</p>
+        <a href="#" class="btn-pill-dark">Get started free</a>
+        <p class="cta-fine">No card required. Cancel any time.</p>
       </div>
     </section>
   </main>
 
   <!-- ===== Footer ===== -->
   <footer class="footer">
-    <div class="container footer-inner">
-      <div class="footer-brand">
-        <a href="#top" class="logo logo-light">
-          <span class="logo-mark"></span>
-          Nightwell
-        </a>
-        <p class="footer-tag">Indie games, forged by hand.</p>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#top" class="brand">
+            <svg class="brand-mark" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10.5" fill="none" stroke="currentColor" stroke-width="2.4"/>
+              <circle cx="12" cy="12" r="4.2" fill="currentColor"/>
+            </svg>
+            <span class="brand-word">Orderfy</span>
+          </a>
+          <p class="footer-tag">The all-in-one restaurant platform.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Platform</h4>
+          <a href="#ordering">Online ordering</a>
+          <a href="#operations">Point of sale</a>
+          <a href="#operations">Kitchen display</a>
+          <a href="#delivery">Delivery</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About</a>
+          <a href="#">Customers</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#">Help center</a>
+          <a href="#">Hardware</a>
+          <a href="#">Status</a>
+          <a href="#">Developer API</a>
+        </div>
       </div>
-      <div class="footer-cols">
-        <div class="footer-col">
-          <h4>Games</h4>
-          <a href="#games">Hollow Tide</a>
-          <a href="#catalogue">Ashfall</a>
-          <a href="#catalogue">Paper Sky</a>
-        </div>
-        <div class="footer-col">
-          <h4>Studio</h4>
-          <a href="#studio">About</a>
-          <a href="#journal">Journal</a>
-          <a href="#join">Careers</a>
-        </div>
-        <div class="footer-col">
-          <h4>Follow</h4>
-          <a href="#">Discord</a>
-          <a href="#">Steam</a>
-          <a href="#">Bluesky</a>
+      <div class="footer-fine">
+        <p>1. Starter plan is free; standard processing rates apply per transaction. 2. Based on aggregated, anonymized table-turn data across Pro accounts in 2025.</p>
+        <div class="footer-bottom">
+          <span>© 2026 Orderfy, Inc. All rights reserved.</span>
+          <span class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></span>
         </div>
       </div>
-    </div>
-    <div class="container footer-bottom">
-      <span>© 2026 Nightwell Studio. All rights reserved.</span>
-      <span>Made by hand, somewhere quiet.</span>
     </div>
   </footer>
 
