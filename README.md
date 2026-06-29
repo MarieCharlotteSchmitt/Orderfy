@@ -1,13 +1,19 @@
-# Nightwell — Indie Game Studio Website
+# Orderfy — The all-in-one restaurant platform
 
-A single-page marketing site for a fictional independent game studio, built to the
-**Revolut** style reference (`design.md`): a strict achromatic palette, cinematic
-full-bleed hero/feature sections, geometric display type with tight negative
-letter-spacing, pill-shaped buttons, and an intentionally flat (shadow-free) look.
+A single-page marketing site for **Orderfy**, an all-in-one restaurant management and
+ordering platform (online ordering, POS, payments, kitchen display, and delivery).
+
+Built to the **Apple "gallery wall"** style reference (`design.md`): a gallery-white
+`#f5f5f7` canvas, enormous weight-700 display headlines with tight negative
+letter-spacing, shadow-free cards separated by value alone, 28px card radius, and a
+single rationed accent color. That accent — Apple's Azure blue in the reference — is
+swapped for the **Orderfy teal** sampled from the brand film (`#0e9aa3`, logo core
+`#0096a2`, app accent `#25a3a1`). The hero product stage uses the warm-taupe studio
+gradient from the video so the page reads as the film's still companion.
 
 ## Run it
 
-It's plain static HTML/CSS/JS — no build step. Open `index.html` directly, or serve it:
+Plain static HTML/CSS/JS — no build step. Open `index.html`, or serve it:
 
 ```bash
 python3 -m http.server 8000
@@ -18,18 +24,23 @@ python3 -m http.server 8000
 
 | File | Purpose |
 |------|---------|
-| `index.html` | Page markup and content |
-| `styles.css` | Design-system tokens + all section styles |
-| `script.js` | Header light/dark swap on scroll |
+| `index.html` | Page markup and all copy |
+| `styles.css` | Design-system tokens + every section style |
+| `script.js` | Sticky sub-nav active-section tracking + carousel dots |
 
 ## Design notes
 
-- **Fonts:** `Sora` substitutes for Aeonik Pro (geometric, condensed display face); `Inter` for body — both loaded from Google Fonts.
-- **Palette:** restricted to white / off-white / black / near-black per the brief; color comes only from photography.
-- **Imagery:** cinematic Unsplash photos sit over gradient fallbacks, so heroes still look right if images fail to load.
-- **Layout:** full-bleed heroes alternating with centered 1200px content blocks, with generous 96px section gaps.
+- **Font:** `Inter` substitutes for SF Pro Display / SF Pro Text per the reference.
+- **Color discipline:** teal appears only on the primary CTA, inline links, the logo,
+  and inside the in-product app UI — exactly as the reference rations its one accent.
+- **Elevation:** content cards carry zero box-shadow; depth is value-only
+  (`#ffffff` cards on `#f5f5f7` canvas). The phone and studio stage keep
+  film-accurate shadow to read as product photography.
+- **Imagery:** the hero phone, app map screen, and menu/feature panels are built in
+  pure CSS so the page is self-contained with no external assets.
 
 ## Sections
 
-Hero · social proof / awards · featured game (Hollow Tide) · game collection ·
-studio · how-we-build pillars · journal · wishlist CTA · footer.
+Global nav · sticky product sub-nav · hero (with live-order phone mockup) · intro
+statement · ordering · teal delivery showcase · operations 2×2 grid · highlights
+carousel · stats · pricing · closing CTA · footer.
